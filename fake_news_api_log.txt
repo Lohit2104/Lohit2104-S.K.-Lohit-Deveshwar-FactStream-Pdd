@@ -1,0 +1,48 @@
+Status: 400
+Response: {"error":"Task not found for this model"}
+Data Sent: {"inputs":"1: 10% of the world\u2019s oxygen is produced by the sea: Our first thought may be the rainforest. But did you know half of the world\u2019s oxygen is actually produced by plankton, seaweed and other ocean-based photosynthesis. \r\n\r\n2: The human stomach can dissolve razor blades: Acids are ranked on a scale 0-14 (the lower the PH level, the stronger the acid). The human stomach is typically rated 1.0-2.0 meaning it is impeccably strong.\r\n\r\n3: There are more trees on the planet than stars in the solar system: According to experts from NASA, there are up to 400 billion stars in the milky way galaxy \u2013 but the number of trees on Earth is estimated to be more than 3 trillion.\r\n"}
+Status: 400
+Response: {"error":"Task not found for this model"}
+Data Sent: {"inputs":"ii"}
+Status: 400
+Response: {"error":"Task not found for this model"}
+Data Sent: {"inputs":"wded"}
+Status: 400
+Response: {"error":"Task not found for this model"}
+Data Sent: {"inputs":"eeeeee"}
+Status: 400
+Response: {"error":"Task not found for this model"}
+Data Sent: {"inputs":"eeeeee"}
+Status: 404
+Response: {"error":"Model distilbert-base-uncased-finetuned-fakenews-detection does not exist"}
+Data Sent: {"inputs":"wdwdwdwdwd"}
+Status: 401
+Response: {"status":"error","code":"apiKeyInvalid","message":"Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key."}
+Data Sent: {"inputs":"wdwdwdwdwd"}
+Status: 401
+Response: {"status":"error","code":"apiKeyInvalid","message":"Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key."}
+Data Sent: {"inputs":"sifsihdbscb"}
+Status: 401
+Response: {"status":"error","code":"apiKeyInvalid","message":"Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key."}
+Data Sent: {"inputs":"sifsihdbscb"}
+Status: 401
+Response: {"status":"error","code":"apiKeyInvalid","message":"Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key."}
+Data Sent: {"inputs":"sifsihdbscb"}
+Status: 401
+Response: {"status":"error","code":"apiKeyInvalid","message":"Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key."}
+Data Sent: {"inputs":"sadsdsd"}
+Status: 400
+Response: {"error":"Task not found for this model"}
+Data Sent: {"inputs":"sadsdsd"}
+Status: 400
+Response: {"error":"Task not found for this model"}
+Data Sent: {"inputs":"swsss"}
+Status: 400
+Response: {"error":"Authorization header is correct, but the token seems invalid"}
+Data Sent: {"inputs":"swsss"}
+Status: 400
+Response: {"error":"Authorization header is correct, but the token seems invalid"}
+Data Sent: {"inputs":"skdfndns"}
+Status: 400
+Response: {"error":"Authorization header is correct, but the token seems invalid"}
+Data Sent: {"inputs":"Scientists Discover a Pill That Makes You Immortal \u2013 Available in Stores Next Week!"}

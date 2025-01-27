@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Content</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafc;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.upload-container {
+    width: 50%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="file"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .upload-container {
+        width: 90%;
+    }
+}
+
+     </style>
+    <script>
+        function validateForm() {
+            const content = document.getElementById('content').value;
+            const picture = document.getElementById('picture').files[0];
+
+            // Validate Content Length
+            if (content.length > 1000) {
+                alert('Content should not exceed 1000 characters.');
+                return false;
+            }
+
+            // Validate File Size (25MB)
+            if (picture && picture.size > 25 * 1024 * 1024) {
+                alert('File size should not exceed 25MB.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Upload Content</h1>
+        <form action="fake_news_detection.php" method="POST" enctype="multipart/form-data" onsubmit="return validateForm();">
+            <label for="category">Category:</label>
+            <select name="category" id="category" required>
+                <option value="news">News</option>
+                <option value="article">Article</option>
+                <option value="blog">Blog</option>
+            </select>
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter title" required>
+
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" placeholder="Enter content (max 1000 characters)" rows="5" required></textarea>
+
+            <label for="picture">Upload Image:</label>
+            <input type="file" id="picture" name="picture" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
